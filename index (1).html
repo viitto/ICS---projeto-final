@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Formulário de Reserva</title>
+	 <link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>
+		<div class="container">
+			<h1>Reserve uma Hospedagem</h1>
+			<form method="POST" action="php/backend.php" class="reserva-form">
+				<fieldset>
+					<legend>Informações de Reserva</legend>
+					<label for="destino">Para onde:</label>
+					<input type="text" id="destino" name="destino" required>
+					<label for="data_chegada">Data de Checkin:</label>
+					<input type="date" id="data_chegada" name="data_chegada" required>
+					<label for="data_saida">Data de Checkout:</label>
+					<input type="date" id="data_saida" name="data_saida" required>
+					<label for="numero_pessoas">Número de Pessoas:</label>
+					<input type="number" id="numero_pessoas" name="numero_pessoas" min="1" required>
+				</fieldset>
+				<button type="submit">Enviar</button>
+			</form>
+		</div>
+	</body>
+</html>
+
